@@ -1,0 +1,294 @@
+/*------------------------------------------------------------------------------*/
+/*BASIC SETUP */
+/*------------------------------------------------------------------------------*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing :border-box;
+}
+html{
+    background:#fff;
+    color:#555;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:400;
+    font-size:20px;
+    text-rendering:optimizeLegibility;
+}
+.clearfix{zoom:1}
+.clearfix:after {
+    content:'_';
+    clear:both;
+    height:0;
+    visibility: hidden;
+}
+/*------------------------------------------------------------------------------*/
+/*REUSABLE  CONTENT */
+/*------------------------------------------------------------------------------*/
+
+.row{
+    max-width:1140px;
+    margin:0 auto 0 auto;
+    margin:0 auto;
+}
+section{
+    padding:80px 0px;
+}
+
+.box{
+    padding:1%;
+}
+/*------------------------------------------------------------------------------*/
+/*HEADINGS */
+/*------------------------------------------------------------------------------*/
+
+
+h1,h2,h3{ 
+    font-weight:500;
+    text-transform:full-width;
+    letter-spacing: 1px;
+   
+    
+}
+h1{
+    margin-top:0;
+    margin-bottom:20px;
+    margin:0;
+    color:aliceblue;
+    font-size:250%;
+    word-spacing:3px;
+    
+}
+h2{
+    font-size:180%;
+    word-spacing:2px;
+    text-align:center;
+    margin-bottom:30px;
+}
+h3{  
+    font-size:110%;
+    margin-bottom:15px; 
+}
+h2:after{
+    display:block;
+    height: 2px;
+    background-color:rgba(103, 102, 165, 0.58);
+    content: " ";
+    width:100px;
+    margin:0 auto;
+    margin-top:30px;
+    text-transform: uppercase;
+    
+}
+
+/*----------------PARAGRAPH-----------------------------*/
+
+
+.long-way{
+    line-height:145%;
+    text-align: center;
+    width:70%;
+    margin-left:15%;
+    
+}
+.box p{
+    font-size:100%;
+    line-height:120%;
+}
+
+/*------------------------------------------------------------------------------*/
+/*BUTTONS */
+/*------------------------------------------------------------------------------*/
+.btn:link,
+.btn:visited{
+    display:inline-block;
+    padding: 10px 30px;
+    font-weight:500;
+    text-decoration: none;
+    border-radius:200px;
+    color:#0fe0c8;
+}
+
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: rgba(197, 166, 247, 0.58);
+    border:1px solid #f8f3f3;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border:1px solid #f8f3f3;
+    color:#b884ff;
+    transition:background-color 0.2s, border 0.2s;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: rgba(73, 72, 121, 0.87);
+}
+.btn-full:hover,
+.btn-full:active{
+    
+    border:1px solid ;
+    color:#ffffff;
+    
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: rgba(103, 102, 165, 0.58);
+    border:1px solid rgba(40, 40, 126, 0.66);
+    color:#ffffff;
+}
+
+/*------------------------------------------------------------------------------*/
+/*HEADER */
+/*------------------------------------------------------------------------------*/
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(images/starry_sky_shine.jpg);
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+}
+
+.hero-text-box{
+    position:absolute;
+    width:1140px;
+    top:50%;
+    left:50%; 
+    transform:translate(-50%, -50%);
+}
+.logo{
+    height:100px;
+    width:auto;
+    float:left;
+}
+.sec1img{
+    height:180px;
+    width:100%;
+    
+}
+
+.main-nav{
+    float:right;
+    list-style:none;
+    margin-top:55px;
+    
+}
+.main-nav li{
+    display:inline-block;
+    margin-left:40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color:white;
+    padding:5px 0;
+    text-decoration:none;
+    text-transform:full-width;
+    font-size:90%;
+    transition:border-bottom 0.2px;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom:2px solid rgba(136, 132, 234, 0.94);
+    transition:border-bottom 0.5px;
+}
+/*------------------------------------------------------------------------------*/
+/*PORTFOLIO */
+/*------------------------------------------------------------------------------*/
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+/*------------------------------------------------------------------------------*/
+/*PORTFOLIO */
+/*------------------------------------------------------------------------------*/
+.section-meals{
+    padding:0px;
+}
+.meals-showcase{
+    list-style:none;
+    width:100%;
+    
+}
+.meals-showcase li{
+    float:left;
+    width:25%;
+    
+}
+.meal-photo{
+    width:338px;
+    margin:0px;
+    overflow:hidden;
+    background-color: #000;
+}
+.meal-photo img{
+    opacity: 0.7;
+    width:338px;
+    height:250px;
+    float:0px;
+    transform:scale(1.15);
+    transition:transform 0.5s, opacity 0.5s;
+    
+}
+.meal-photo img:hover{
+    opacity: 1;
+    transform:scale(1.03);
+}
+
+/*------------------------------------------------------------------------------*/
+/*PORTFOLIO */
+/*------------------------------------------------------------------------------*/
+
+.steps-box{
+    margin-top:30px;
+    
+}
+.steps-box:first-child{
+    text-align:center;
+    padding-left:3%;
+   
+}
+.steps-box:last-child{
+    margin-top:30px;
+    padding-left: 3%;
+    
+}
+.app-screen{
+    height:auto;
+    width:250px;
+    display: inline-grid;
+    
+}
+.works-step{
+    margin-bottom:100px;
+    position:inherit;
+    text-align:left;
+    bottom:8px;
+    left:67px;
+    
+}
+.works-step div{
+    color:solid rgba(136, 132, 234, 0.94);
+    border:2px solid rgba(136, 132, 234, 0.94);
+    display:inline-block;
+    border-radius:50%;
+    height:55px;
+    width:55px;
+    text-align:center;
+    padding:9px;
+    float:left;
+    font-size:150%;
+    margin-right:px;
+}
+.btn-app img{
+    height:50px;
+    width:150px;
+    margin-right:10px;
+}
+.only-for-grid{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
