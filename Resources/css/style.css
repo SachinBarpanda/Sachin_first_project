@@ -99,7 +99,8 @@ h2:after{
 /*BUTTONS */
 /*------------------------------------------------------------------------------*/
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     display:inline-block;
     padding: 10px 30px;
     font-weight:500;
@@ -123,7 +124,7 @@ h2:after{
 }
 
 .btn:hover,
-.btn:active{
+.btn:active,input[type=submit]{
     background-color: rgba(73, 72, 121, 0.87);
 }
 .btn-full:hover,
@@ -153,7 +154,8 @@ h2:after{
     border-color: gold;
 }
 .btn-plans:hover,
-.btn-plans:active{
+.btn-plans:active,
+input[type=submit]{
     color:gold;
     background-color:aliceblue;
     border-color: aquamarine;
@@ -484,16 +486,20 @@ cite img{
 /*------------------------------------------------------------------------------*/
 / *  FORMS */
 /*------------------------------------------------------------------------------*/
-.contact-form{
+
+
+contact-form{
     width: 60%;
-    margin: 0 auto;
+    height: 20%;
+    margin: 0 0 0 0;
     text-align: center;
+    text-decoration: inherit;
+    
 }
+
 input[type=text],
 input[type=email],
-select,
-textarea
-{
+select,textarea{
     width: 100%;
     padding: 7px;
     border-radius: 3px;
@@ -504,15 +510,85 @@ textarea
     text-decoration-style: dashed;
     text-align: left;
 }
-.textarea{
-    height:100px;
-    
-}
+
 input[type=checkbox]{
     margin::10px 5px 10px 0;
 }
 
 *:focus{outline: none;}
+
+/*------------------------------------------------------------------------------*/
+/* FOOTER */
+/*------------------------------------------------------------------------------*/
+
+footer{
+    background: #03031a;  
+    padding: 20px;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.footer-nav li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.social-links {
+   
+   float: right;
+    list-style: none;
+   
+}
+.social-links li {
+   
+  
+    display: inline-block;
+   margin: 5px;
+   
+}
+
+.social-links li:last-child,
+.footer-nav li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visted{
+    text-decoration: underline;
+    border: 0px;
+    color: aqua;
+}
+ 
+footer p{
+    margin-top:30px;
+    color: aqua;
+    text-align: center;
+    font-size:20px;
+}
+
+.ion-social-facebook,
+.ion-social-googleplus,
+.ion-social-instagram,
+.ion-social-twitter{
+    transition: 0.5s;
+}
+
+.ion-social-facebook:hover{color: #3b5998;}
+.ion-social-googleplus:hover{color: red;}
+.ion-social-instagram:hover{color: mediumvioletred;}
+.ion-social-twitter:hover{color: lightblue;}
+
+
+
+
+
+
+
 
 
 
