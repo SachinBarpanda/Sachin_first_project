@@ -138,8 +138,37 @@ h2:after{
 .btn-ghost:active{
     background-color: rgba(103, 102, 165, 0.58);
     border:1px solid rgba(40, 40, 126, 0.66);
-    color:#ffffff;
+    color:#fff;
 }
+.btn-premium:link,
+.btn-premium:visited{
+    color:white;
+    background-color:gold;
+}
+
+.btn-premium:hover,
+.btn-premium:active{
+    color:gold;
+    background-color:aliceblue;
+    border-color: gold;
+}
+.btn-plans:hover,
+.btn-plans:active{
+    color:gold;
+    background-color:aliceblue;
+    border-color: aquamarine;
+}
+
+.btn-plans:link,
+.btn-plans:visited{
+    background-color:white;
+    color:gold;
+    border:1px solid gold;
+}
+
+
+
+
 
 /*------------------------------------------------------------------------------*/
 /*HEADER */
@@ -241,6 +270,11 @@ header{
 /*------------------------------------------------------------------------------*/
 /*PORTFOLIO */
 /*------------------------------------------------------------------------------*/
+.section-steps{
+    background-color: aliceblue;
+    padding:-2px;
+    margin:-16px;
+}
 
 .steps-box{
     margin-top:30px;
@@ -389,3 +423,99 @@ cite img{
     vertical-align: middle;
     
 }
+/*------------------------------------------------------------------------------*/
+/ *  PLANS */
+/*------------------------------------------------------------------------------*/
+
+.section-plans{ 
+    background-color: red;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius:5px;
+    width:90%;
+    margin-left:5%;
+    margin-bottom:10%;
+    box-shadow: 0 20px 20px #e8e8e8;
+}
+
+.plan-box div{
+    padding:15px;
+    border-bottom:0.5px solid rgb(234, 218, 248);
+    
+}
+.plan-box div:first-child{
+    background-color:#f2f2f2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.plan-box div:last-child{
+    text-align: center;
+    border:0 px;
+}
+
+.plan-price {
+    font-size:300%;
+    margin-bottom:10px;
+    font-weight:100;
+    color:blueviolet;
+}
+
+.plan-price span{
+     font-size:30%;
+    font-weight: 300;
+}
+
+.plan-price-meal{
+    font-size:80%;
+} 
+.plan-box ul{
+    list-style: none;
+    margin-bottom: 1px;
+    
+}
+.plan-box ul li {
+    padding: 15px 0;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+/ *  FORMS */
+/*------------------------------------------------------------------------------*/
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+input[type=text],
+input[type=email],
+select,
+textarea
+{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border : 1px solid #ccc;
+}
+
+.row news{
+    text-decoration-style: dashed;
+    text-align: left;
+}
+.textarea{
+    height:100px;
+    
+}
+input[type=checkbox]{
+    margin::10px 5px 10px 0;
+}
+
+*:focus{outline: none;}
+
+
+
+
+
+
