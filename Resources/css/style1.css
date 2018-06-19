@@ -198,16 +198,25 @@ header{
     width:auto;
     float:left;
 }
+
+
 .sec1img{
     height:180px;
     width:100%;
     
 }
 
+
+/*------------------------------------------------------------------------------*/
+/*----------------Main  NAVIGATIONS---------------*/
+/*------------------------------------------------------------------------------*/
+
+
 .main-nav{
     float:right;
     list-style:none;
-    margin-top:55px;
+    margin-top:18px;
+   
     
 }
 .main-nav li{
@@ -225,12 +234,46 @@ header{
 }
 .main-nav li a:hover,
 .main-nav li a:active{
-    border-bottom:2px solid rgba(136, 132, 234, 0.94);
-    transition:border-bottom 0.5px;
+    border-bottom:3px solid rgba(120, 199, 234, 0.94);
+    transition:border-top 0.5px;
 }
+/*------------------------------------------------------------------------------*/
+/***STICKY NAVIGATION            ***/
+/*------------------------------------------------------------------------------*/
+
+.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    color:aliceblue;
+    background-color: white ;
+    box-shadow: 0 2px 2px #d3d3d3;
+    
+    
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    
+    color:darkslategrey;
+    padding:1px 0;
+    
+}
+.sticky .logo{
+        display: none;
+ }
+
+.sticky .logo-black{height:65px;
+    width:auto;
+    float:left;display: block;}
+
+
 /*------------------------------------------------------------------------------*/
 /*PORTFOLIO */
 /*------------------------------------------------------------------------------*/
+
+
 .section-features .long-copy{
     margin-bottom: 30px;
 }
