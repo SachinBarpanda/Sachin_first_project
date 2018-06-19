@@ -249,7 +249,7 @@ header{
     color:aliceblue;
     background-color: white ;
     box-shadow: 0 2px 2px #d3d3d3;
-    
+    z-index: 999;
     
 }
 
@@ -264,9 +264,10 @@ header{
         display: none;
  }
 
-.sticky .logo-black{height:65px;
+.sticky .logo-sticky{height:65px;
     width:auto;
     float:left;display: block;}
+.logo-sticky{display: none;}
 
 
 /*------------------------------------------------------------------------------*/
