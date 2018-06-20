@@ -20,9 +20,10 @@
         height:230px;
     }
    .main-nav{
+       
     float:right;
     list-style:none;
-    margin-top:55px;
+    margin-top:25px;
         padding: 0 40px;
     
 }
