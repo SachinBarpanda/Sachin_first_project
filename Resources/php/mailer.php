@@ -8,7 +8,7 @@
 
     // Check the data.
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location:https://sachinbarpanda.github.io/Sachin_first_project/ ");
+        header("Location:https://sachinbarpanda.github.io/Sachin_first_project/index.php?sucess=-1#form");
         exit;
     }
 
@@ -30,6 +30,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Redirect to the index.html page with success code
-    header("Location: ");
+    header("Location:Location:https://sachinbarpanda.github.io/Sachin_first_project/index.php?sucess=-1#form ");
 
 ?>

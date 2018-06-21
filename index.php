@@ -47,7 +47,7 @@
                         <li><a href="#start">Where did it start?</a></li>
                         <li><a href="#work">How it Works</a></li>
                         <li><a href="#center">Reserch centers</a></li>
-                        <li><a href="#ask">Ask Anything</a></li>
+                        <li><a href="#form">Ask Anything</a></li>
                     </ul>
                     <a class="mob-nav-icon js--nav-icon" style="font-size: 30px;"><i class="ion-navicon-round"></i></a>
                 </div>
@@ -374,7 +374,7 @@
             </div>    
         </section>
        
-            <div class="map-box" id="ask">
+            <div class="map-box" id="form">
                 <div class="maps"></div>
                     <div class="form-box">
                 <div class="row">
