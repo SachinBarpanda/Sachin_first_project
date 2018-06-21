@@ -129,8 +129,25 @@ $('a[href*="#"]')
         }
     })
     
+    var map = new GMaps({
+      div: '.maps',
+      lat: 20.2913353,
+      lng: 81.7626978,
+      zoom:12
+    });
+
+    map.addMarker({
+        lat:20.2913353,
+        lng:81.6626978,
+        title:"Odisha",
+        infoWindow:{
+            content: '<p> Our Scientific HQ</p>'
+        }
+        
+    })
     
 });
+
 
 
 

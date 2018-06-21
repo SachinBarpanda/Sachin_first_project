@@ -31,6 +31,28 @@
 
 /********  Medium Tablets 768 to 1023 px ***********/
 @media only screen and (max-width: 1023px){
+   
+    .sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    color:aliceblue;
+    background-color: white ;
+    box-shadow: 0 2px 2px #d3d3d3;
+    z-index: 999;
+        margin:0px;
+    
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    
+    color:darkslategrey;
+    padding:0px 0;
+    
+}
+    
     body{
         font-size: 18px;
     }
@@ -38,8 +60,8 @@
     .main-nav{
     float:right;
     list-style:none;
-    margin-top:55px;
-        padding: 20px;
+    margin-top:15px;
+        padding: 10px;
     
 }
     
@@ -82,6 +104,7 @@
     .steps-box{margin-top: 10px;}
     .works-steps{margin-bottom: 40px;}
     .city-features{font-size: 90%;}
+    contact-form{width:90%;}
     
 }
 
@@ -103,7 +126,7 @@
     .main-nav{
         float:left;
         list-style:none;
-        margin-top:15px;
+        margin-top:5px;
         padding: 0px;
     
     }
@@ -115,7 +138,7 @@
     .main-nav li a:visited{
         display:block;
         border: none;
-        padding: 10px 0;
+        padding: 0px 0;
         font-size: 100%;
         
     }
@@ -206,20 +229,53 @@
         margin-bottom: 0px;
     }
    
-    .plan-box {
+    .plan-box  {
         background-color: #fff;
         border-radius:5px;
         width:100%;
+        height:60%;
         margin-left:1%;
         margin-bottom:10%;
         box-shadow: 0 20px 20px #e8e8e8;
     }
+    
+    .plan-box li {
+    }
+    
+    .maps{
+        width: 100%;
+        height: 380px;
+        z-index: 0;
+        position: relative;
+    }
 
+    .map-box{
+        width: 100%;
+        height: 500px;
+        position: relative;
+        margin: ;
+    }
+
+    .form-box{
+        position: relative;
+        top: 0;
+        right:  0;
+        background-color: rgba(240, 248, 255, 0.8);
+        z-index: 10;
+        height: 20px;
+        padding: 10px 0 0 10;
+        width: 100%;
+    }
+    .contact-form{width:90%;padding:px;}
+    .section-plans{margin:20px;}
+    
+    footer{margin-top:380px;padding: 10px;}
 }
 
 
 
 /******   Small Phones : from 0 to 480 px *******/
+
 @media only screen and (max-width :480px){
     
     section{padding : 25px 0;}
@@ -233,8 +289,8 @@
         height:90px;
     }
     
-    
-    
+    contact-form{width:40%;}
+    footer{margin-top:480px;padding: 10px;}
 }
 
 

@@ -101,8 +101,7 @@ h2:after{
 /*BUTTONS */
 /*------------------------------------------------------------------------------*/
 .btn:link,
-.btn:visited,
-input[type=submit]{
+.btn:visited{
     display:inline-block;
     padding: 10px 30px;
     font-weight:500;
@@ -114,19 +113,20 @@ input[type=submit]{
 
 .btn-full:link,
 .btn-full:visited{
-    background-color: rgba(197, 166, 247, 0.58);
+    background: rgba(197, 166, 247, 0.58);
     border:1px solid #f8f3f3;
 }
 
 .btn-ghost:link,
-.btn-ghost:visited{
+.btn-ghost:visited
+{
     border:1px solid #f8f3f3;
     color:#b884ff;
-    transition:background-color 0.2s, border 0.2s;
+    transition:background 0.2s, border 0.2s;
 }
 
 .btn:hover,
-.btn:active,input[type=submit]{
+.btn:active{
     background-color: rgba(73, 72, 121, 0.87);
 }
 .btn-full:hover,
@@ -156,8 +156,7 @@ input[type=submit]{
     border-color: gold;
 }
 .btn-plans:hover,
-.btn-plans:active,
-input[type=submit]{
+.btn-plans:active{
     color:gold;
     background-color:aliceblue;
     border-color: aquamarine;
@@ -167,11 +166,30 @@ input[type=submit]{
 .btn-plans:visited{
     background-color:white;
     color:gold;
-    border:1px solid gold;
+    
+    border:2px solid gold;
 }
 
 
-
+input[type=submit]{
+    color:white;
+    background-color:gold;
+    padding: 10px 30px;
+    font-weight:500;
+    text-decoration: none;
+    border-radius:200px;
+    border-color: lightblue;
+}
+input[type=submit]:hover,
+input[type=submit]:active{
+    transition:background 0.2s, border:0.5s;
+}
+input[type=submit]:hover,
+input[type=submit]:active{
+    background: aliceblue;
+    border-color: gold;
+    color: gold;
+}
 
 
 /*------------------------------------------------------------------------------*/
@@ -582,6 +600,30 @@ input[type=checkbox]{
 
 *:focus{outline: none;}
 
+.maps{
+    width: 100%;
+    height: 520px;
+    z-index: 0;
+    position: relative;
+}
+
+.map-box{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.form-box{
+    position: absolute;
+    top: 0;
+    right:  0;
+    background-color: rgba(240, 248, 255, 0.8);
+    z-index: 10;
+    height: 520px;
+    padding: 40px;
+    width: 50%;
+}
+
 /*------------------------------------------------------------------------------*/
 /* FOOTER */
 /*------------------------------------------------------------------------------*/
@@ -589,6 +631,7 @@ input[type=checkbox]{
 footer{
     background: #03031a;  
     padding: 20px;
+    width: 100%;
 }
 
 .footer-nav{
