@@ -383,13 +383,21 @@
                 <div class="row">
                     <form method="post" action="mailer.php" class="contact-form">
                         <div class ="row">
-                             <div class="form-message sucess">
-                            Thank you for Your Interest 
-                            </div>
                             
-                            <div class="form-message error">
+                            <?php
+
+                                if($_GET["sucess"]==1)
+                                { echo"
+                             <div class=\"form-message sucess\">
+                            Thank you for Your Interest 
+                            </div>";}
+                            
+                            if($_GET["sucess"]==-1)
+                                { echo"<div class=\"form-message error\">
                             Oops ! Something went wrong.Please try again!
-                            </div>
+                            </div>";}
+
+                                ?>
                         </div>
                         <div class="row">
                            

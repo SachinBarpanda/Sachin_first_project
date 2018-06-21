@@ -182,7 +182,7 @@ input[type=submit]{
 }
 input[type=submit]:hover,
 input[type=submit]:active{
-    transition:background 0.2s, border:0.5s;
+    transition:background 0.2s, border 0.5s;
 }
 input[type=submit]:hover,
 input[type=submit]:active{
@@ -509,12 +509,9 @@ cite img{
     
 }
 /*------------------------------------------------------------------------------*/
-//// *****  PLANS *//////
+/*  PLANS */
 /*------------------------------------------------------------------------------*/
 
-.section-plans{ 
-    background-color: red;
-}
 
 .plan-box {
     background-color: #fff;
@@ -567,11 +564,11 @@ cite img{
 
 
 /*------------------------------------------------------------------------------*/
-/ *  FORMS */
+/*  FORMS */
 /*------------------------------------------------------------------------------*/
 
 
-contact-form{
+form-box{
     width: 60%;
     height: 20%;
     margin: 0 0 0 0;
@@ -595,14 +592,14 @@ select,textarea{
 }
 
 input[type=checkbox]{
-    margin::10px 5px 10px 0;
+    margin:10px 5px 10px 0;
 }
 
 *:focus{outline: none;}
 
 .maps{
     width: 100%;
-    height: 520px;
+    height: 650px;
     z-index: 0;
     position: relative;
 }
@@ -619,10 +616,43 @@ input[type=checkbox]{
     right:  0;
     background-color: rgba(240, 248, 255, 0.8);
     z-index: 10;
-    height: 520px;
+    height: 650px;
     padding: 40px;
     width: 50%;
+    
 }
+
+.form-message{
+    width:70%;
+    margin:0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.sucess{
+    background-color: rgba(0, 255, 0, 0.8);
+}
+
+
+.error{
+    background-color: rgba(255, 0, 0, 0.9);
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------------------------------------------------------------*/
 /* FOOTER */
@@ -632,6 +662,7 @@ footer{
     background: #03031a;  
     padding: 20px;
     width: 100%;
+    margin-top:10%;
 }
 
 .footer-nav{
